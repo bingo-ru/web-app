@@ -1,6 +1,6 @@
 {
-  "name": "vite-template-solid",
-  "version": "0.0.0",
+  "name": "bingo-app",
+  "version": "0.0.1",
   "description": "",
   "type": "module",
   "scripts": {
@@ -11,7 +11,11 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^9.29.0",
+    "eslint-plugin-solid": "^0.14.5",
+    "globals": "^16.2.0",
     "typescript": "^5.7.2",
+    "typescript-eslint": "^8.34.1",
     "vite": "^6.0.0",
     "vite-plugin-solid": "^2.11.6"
   },
