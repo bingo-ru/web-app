@@ -7,7 +7,7 @@ export default function MainPage() {
     <div class="w-full h-full bg-black">
       <header>
         <Logo />
-        <Button size="sm">Создать мероприятие</Button>
+        <Button size="min">Создать мероприятие</Button>
       </header>
       <main>
         <Input

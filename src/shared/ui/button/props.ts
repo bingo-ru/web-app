@@ -1,0 +1,7 @@
+import { VariantProps } from 'class-variance-authority';
+import { JSX } from 'solid-js/jsx-runtime';
+import { buttonVariants } from './variants';
+
+export interface ButtonProps
+  extends JSX.HTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof buttonVariants> {}
