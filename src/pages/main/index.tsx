@@ -1,6 +1,8 @@
 import { Match, Suspense, Switch } from 'solid-js';
 import Logo from '../../shared/ui/logo';
 import Icon from '../../shared/ui/icon';
+import Button from '../../shared/ui/button';
+import Text from '../../shared/ui/text';
 
 export default function MainPage() {
   return (
@@ -15,9 +17,9 @@ export default function MainPage() {
           placeholder="поиск"
         />
         <div>
-          <Title level="h1" color="primary-gradient">
+          <Text as="h1" color="primary">
             подобрали для вас
-          </Title>
+          </Text>
           <Suspense fallback={<EventCard.Skeleton />}>
             <Switch>
               <Match when={false}>
@@ -30,9 +32,9 @@ export default function MainPage() {
           </Suspense>
         </div>
         <div>
-          <Title level="h1" color="primary-gradient">
+          <Text as="h1" color="primary">
             Смотрите также
-          </Title>
+          </Text>
           <div>
             <Suspense fallback={<EventCard.Skeleton />}>
               <Switch>
