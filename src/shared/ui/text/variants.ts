@@ -12,7 +12,7 @@ export const textVariants = cva('-tracking-[5%]', {
       '5xl': 'text-5xl leading-[84%] font-bold',
     },
     color: {
-      primary: 'text-gradient',
+      primary: 'text-gradient w-fit',
       secondary: 'text-black',
       gray: 'text-gray-400',
     },

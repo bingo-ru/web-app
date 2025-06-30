@@ -1,5 +1,5 @@
 import { VariantProps } from 'class-variance-authority';
-import { JSX } from 'solid-js/h/jsx-runtime';
+import { JSX } from 'solid-js';
 import { textVariants } from './variants';
 
 export type TextHTMLElement =
