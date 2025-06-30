@@ -8,6 +8,19 @@
     font-optical-sizing: auto;
     font-style: normal;
   }
+
+  .text-gradient {
+    background: linear-gradient(
+      135deg,
+      #ff7dcd 0%,
+      #e563ff 25%,
+      #ac5eff 50%,
+      #6f3aff 75%,
+      #6195ff 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 @theme {

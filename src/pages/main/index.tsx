@@ -4,19 +4,19 @@ import Text from '../../shared/ui/text';
 
 export default function MainPage() {
   return (
-    <div class="w-full h-full">
-      <header>
+    <div class="w-full h-full bg-black">
+      <header class="flex justify-between items-center px-4 py-6">
         <Logo />
         <Button size="min">Создать мероприятие</Button>
       </header>
-      <main>
+      <main class="bg-gray-0 rounded-t-4xl px-4 py-6">
         {/*<Input
           icon={<Icon glyph="search" size="md" />}
           placeholder="поиск"
         />*/}
         <div>
           <Text as="h1" color="primary" size="5xl">
-            подобрали для вас
+            подобрали <br /> для вас
           </Text>
           {/*<Suspense fallback={<EventCard.Skeleton />}>
             <Switch>
@@ -30,8 +30,8 @@ export default function MainPage() {
           </Suspense>*/}
         </div>
         <div>
-          <Text as="h1" color="primary">
-            Смотрите также
+          <Text as="h1" size="5xl">
+            смотрите также
           </Text>
           <div>
             {/*<Suspense fallback={<EventCard.Skeleton />}>

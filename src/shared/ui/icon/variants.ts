@@ -9,9 +9,9 @@ const IconVariants = cva('inline-block bg-no-repeat', {
       logo: 'w-11 h-11',
     },
     stroke: {
-      gray: 'stroke-gray-400',
-      primary: 'stroke-primary',
-      white: 'stroke-gray-0',
+      gray: 'bg-gray-400',
+      primary: 'bg-primary',
+      white: 'bg-gray-0',
     },
   },
   defaultVariants: {
