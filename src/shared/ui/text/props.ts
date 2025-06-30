@@ -1,5 +1,4 @@
 import { VariantProps } from 'class-variance-authority';
-import { ComponentProps, ValidComponent } from 'solid-js';
 import { JSX } from 'solid-js/h/jsx-runtime';
 import { textVariants } from './variants';
 

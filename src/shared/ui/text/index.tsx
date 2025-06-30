@@ -1,4 +1,4 @@
-import { JSX, splitProps } from 'solid-js';
+import { splitProps } from 'solid-js';
 import { cn } from '../../libs/cn';
 import { TextHTMLElement, TextProps } from './props';
 import { textVariants } from './variants';

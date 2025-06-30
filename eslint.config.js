@@ -1,6 +1,6 @@
 import prettier from 'eslint-config-prettier';
 import solidjseslint from 'eslint-plugin-solid';
-import { defineConfig } from 'eslint/config';
+import { defineConfig, globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
@@ -10,8 +10,11 @@ export default defineConfig([
     languageOptions: {
       globals: { ...globals.browser, ...globals.node },
     },
+    plugins: {
+      solid: solidjseslint.configs.typescript,
+    },
   },
   tseslint.configs.recommended,
-  solidjseslint.configs.typescript,
   prettier,
+  globalIgnores(['./node_modules/**', '.DS_Store', './dist/**']),
 ]);

@@ -12,7 +12,8 @@ export const textVariants = cva('-tracking-[5%]', {
       '5xl': 'text-5xl leading-[84%] font-bold',
     },
     color: {
-      primary: 'bg-primary-gradient text-transparent bg-clip-text',
+      primary:
+        'bg-gradient-to-r bg-primary-gradient bg-clip-text text-transparent',
       secondary: 'text-black',
       gray: 'text-gray-400',
     },

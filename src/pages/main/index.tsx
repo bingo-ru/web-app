@@ -1,26 +1,24 @@
-import { Match, Suspense, Switch } from 'solid-js';
 import Logo from '../../shared/ui/logo';
-import Icon from '../../shared/ui/icon';
 import Button from '../../shared/ui/button';
 import Text from '../../shared/ui/text';
 
 export default function MainPage() {
   return (
-    <div class="w-full h-full bg-black">
+    <div class="w-full h-full">
       <header>
         <Logo />
         <Button size="min">Создать мероприятие</Button>
       </header>
       <main>
-        <Input
+        {/*<Input
           icon={<Icon glyph="search" size="md" />}
           placeholder="поиск"
-        />
+        />*/}
         <div>
-          <Text as="h1" color="primary">
+          <Text as="h1" color="primary" size="5xl">
             подобрали для вас
           </Text>
-          <Suspense fallback={<EventCard.Skeleton />}>
+          {/*<Suspense fallback={<EventCard.Skeleton />}>
             <Switch>
               <Match when={false}>
                 <EventCard.NotFound />
@@ -29,14 +27,14 @@ export default function MainPage() {
                 <EventCard />
               </Match>
             </Switch>
-          </Suspense>
+          </Suspense>*/}
         </div>
         <div>
           <Text as="h1" color="primary">
             Смотрите также
           </Text>
           <div>
-            <Suspense fallback={<EventCard.Skeleton />}>
+            {/*<Suspense fallback={<EventCard.Skeleton />}>
               <Switch>
                 <Match when={false}>
                   <EventCard.NotFound />
@@ -55,7 +53,7 @@ export default function MainPage() {
                   <EventCard />
                 </Match>
               </Switch>
-            </Suspense>
+            </Suspense>*/}
             <Button variant="secondary">смотреть все</Button>
           </div>
         </div>
@@ -64,7 +62,7 @@ export default function MainPage() {
         </div>
       </main>
       <footer>
-        <TabBar router={router}>
+        {/*<TabBar router={router}>
           <TabBar.Item icon={<Icon glyph="home" />}>
             Главная
           </TabBar.Item>
@@ -74,7 +72,7 @@ export default function MainPage() {
           <TabBar.Item icon={<Icon glyph="profile" />}>
             Профиль
           </TabBar.Item>
-        </TabBar>
+        </TabBar>*/}
       </footer>
     </div>
   );

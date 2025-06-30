@@ -7,7 +7,9 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "prepare": "git config core.hooksPath .git-hooks || echo 'Not in a git repo'",
+    "serve": "vite preview",
+    "lint": "eslint"
   },
   "license": "MIT",
   "devDependencies": {
@@ -18,17 +20,18 @@
     "eslint-plugin-solid": "^0.14.5",
     "globals": "^16.2.0",
     "prettier": "3.5.3",
+    "tailwindcss": "^4.1.11",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.34.1",
     "vite": "^6.0.0",
     "vite-plugin-solid": "^2.11.6"
   },
   "dependencies": {
+    "@solidjs/router": "^0.15.3",
     "@tailwindcss/vite": "^4.1.10",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "solid-js": "^1.9.5",
-    "tailwind-merge": "^3.3.1",
-    "tailwindcss": "^4.1.10"
+    "tailwind-merge": "^3.3.1"
   }
 }
