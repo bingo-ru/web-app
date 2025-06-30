@@ -28,5 +28,5 @@ export function mergeRefs<T>(
 }
 
 function chain<T>(fns: ((el: T) => void)[]): (el: T) => void {
-  return (el: T) => fns.forEach((fn) => fn(el));
+  return (el: T) => fns.filter(Boolean).forEach((fn) => fn(el));
 }

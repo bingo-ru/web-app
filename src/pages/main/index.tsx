@@ -1,6 +1,8 @@
 import Logo from '../../shared/ui/logo';
 import Button from '../../shared/ui/button';
 import Text from '../../shared/ui/text';
+import Icon from '../../shared/ui/icon';
+import Input from '../../shared/ui/input';
 
 export default function MainPage() {
   return (
@@ -10,10 +12,10 @@ export default function MainPage() {
         <Button size="min">Создать мероприятие</Button>
       </header>
       <main class="bg-gray-0 rounded-t-4xl px-4 py-6">
-        {/*<Input
-          icon={<Icon glyph="search" size="md" />}
+        <Input
+          iconBefore={<Icon glyph="search" stroke="gray" size="md" />}
           placeholder="поиск"
-        />*/}
+        />
         <div>
           <Text as="h1" color="primary" size="5xl">
             подобрали <br /> для вас
