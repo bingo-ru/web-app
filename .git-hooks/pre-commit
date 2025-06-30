@@ -13,7 +13,7 @@ if [ $? -ne 0 ]; then
   # Можно также вывести список файлов с ошибками (если ваш линтер поддерживает такой формат)
   # Например, для ESLint можно использовать --format=compact
   echo "Files with errors:"
-  npm run lint -- --format=compact 2>&1 | grep -E '^[^ ]+'
+  npm run lint | grep -E 'error|warning'
 
   exit 1
 fi
