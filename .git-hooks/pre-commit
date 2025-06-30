@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# Запускаем linting
+npm run lint
+
+# Проверяем код возврата команды lint
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "❌ Linting errors found! Commit aborted."
+  echo "Fix the errors and try committing again."
+  echo ""
+
+  # Можно также вывести список файлов с ошибками (если ваш линтер поддерживает такой формат)
+  # Например, для ESLint можно использовать --format=compact
+  echo "Files with errors:"
+  npm run lint -- --format=compact 2>&1 | grep -E '^[^ ]+'
+
+  exit 1
+fi
+
+exit 0
